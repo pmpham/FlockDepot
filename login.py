@@ -12,7 +12,7 @@ import dotenv
 from dotenv import load_dotenv
 
 onlineannouncements = [952019407465480292] #952019407465480292]
-instoreannouncements = [952019354806022185] #952019354806022185]
+instoreannouncements = [952019354806022185,967639841330307133] #952019354806022185]
 test = [967639841330307133]
 
 privateverify = 967621988728320030
@@ -22,7 +22,6 @@ verifyid =  967621837582376961
 
 
 load_dotenv()
-
 
 #logging into textnow
 tnclient = pytextnow.Client(os.getenv("TN_USER"), sid_cookie=os.getenv("TN_SID"), csrf_cookie=os.getenv("TN_CSRF"))
