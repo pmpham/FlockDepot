@@ -24,7 +24,7 @@ verifyid =  967621837582376961
 load_dotenv()
 
 #logging into textnow
-tnclient = pytextnow.Client(os.getenv("TN_USER"), sid_cookie=os.getenv("TN_SID"), csrf_cookie=os.getenv("TN_CSRF"))
+tnclient = pytextnow.Client(str(os.getenv("TN_USER")), sid_cookie=str(os.getenv("TN_SID")), csrf_cookie=str(os.getenv("TN_CSRF")))
 print("logged onto textnow")
 
 #logging into database
