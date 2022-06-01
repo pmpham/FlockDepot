@@ -24,7 +24,7 @@ verifyid =  967621837582376961
 load_dotenv()
 
 #logging into textnow
-tnclient = pytextnow.Client(str("thefvplugg"), sid_cookie=str("s%3AkbvJ4_S2J3son2BMrP4FTftUaVWXTNrB.DhwyrQohqFN%2BP%2FkRrVtx7ewOQBs6ZBJHsJJDuIBupHc"), csrf_cookie=str("s%3AVE4aXfxt2b0XezOOgkB_7dIZ.GyKQWGh3wg1XatrpBTTsl7gU6pbAw7Mv8RwG6zfCRgE"))
+tnclient = pytextnow.Client(str("thefvplugg"), sid_cookie=str(os.getenv("TN_SID")), csrf_cookie=str(os.getenv("TN_CSRF")))
 print("logged onto textnow")
 
 #logging into database
